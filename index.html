@@ -9,9 +9,11 @@
 </head>
 <body>
     <div id="myEmailApp">
-        <ol>
+        <ol v-if="emailContainer.length == 10">
             <li v-for="(email, emailIndex) in emailContainer">{{emailContainer[emailIndex]}}</li>
         </ol>
+        
+        <div v-else>CREAZIONE EMAIL LIST IN CORSO</div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
