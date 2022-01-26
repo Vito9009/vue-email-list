@@ -11,7 +11,7 @@
     <h1>EMAIL LIST</h1>
     <div id="myEmailApp">
         <ol v-if="emailContainer.length == 10">
-            <li v-for="(email, emailIndex) in emailContainer">{{emailContainer[emailIndex]}}</li>
+            <li v-for="email in emailContainer">{{email}}</li>
         </ol>
         
         <div v-else>CREAZIONE EMAIL LIST IN CORSO</div>
